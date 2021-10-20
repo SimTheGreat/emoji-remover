@@ -1,0 +1,23 @@
+
+{
+    "name": "emoji transformer",
+    "description": "for my fellow redditors",
+    "version": "1.0",
+    "manifest_version": 3,
+
+    "icons": { 
+       "128": "images/img.png" ,
+        "48": "images/48.png"},
+
+
+
+    "content_scripts":
+	[
+		{
+			"matches": ["<all_urls>"],
+			
+			"js": ["background.js"]
+			
+		}
+	]
+} 
